@@ -1,0 +1,54 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "signatureName": "serving_default",
+        "labelKey": "ocean_proximity_xf",
+        "preprocessingFunctionNames": [
+          "transform_features"
+        ]
+      }
+    ],
+    "slicingSpecs": [
+      {},
+      {
+        "featureKeys": [
+          "housing_median_age"
+        ]
+      }
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "CategoricalAccuracy"
+          },
+          {
+            "className": "Precision"
+          },
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "Recall"
+          },
+          {
+            "className": "AUC"
+          },
+          {
+            "className": "F1Score"
+          }
+        ],
+        "modelNames": [
+          ""
+        ]
+      }
+    ]
+  },
+  "version": "0.45.0",
+  "dataLocation": "../pipeline_root_learning/TFX_components_artifects_store/ImportExampleGen/examples/13/Split-eval/data_tfrecord-00000-of-00001.gz",
+  "fileFormat": "tfrecords",
+  "modelLocations": {
+    "": "../pipeline_root_learning/TFX_components_artifects_store\\Trainer\\model\\18\\Format-Serving"
+  }
+}

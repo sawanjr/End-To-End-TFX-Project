@@ -1,0 +1,44 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "labelKey": "ocean_proximity_xf"
+      }
+    ],
+    "slicingSpecs": [
+      {},
+      {
+        "featureKeys": [
+          "housing_median_age"
+        ]
+      }
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "CategoricalAccuracy"
+          },
+          {
+            "className": "Precision"
+          },
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "Recall"
+          }
+        ],
+        "modelNames": [
+          ""
+        ]
+      }
+    ]
+  },
+  "version": "0.45.0",
+  "dataLocation": "../pipeline_root_learning/TFX_components_artifects_store/Transform/transformed_examples/4/Split-eval/transformed_examples-00000-of-00001.gz",
+  "fileFormat": "tfrecords",
+  "modelLocations": {
+    "": "my_housing_model/0003"
+  }
+}
